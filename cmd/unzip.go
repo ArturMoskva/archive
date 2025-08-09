@@ -14,7 +14,7 @@ var destDir string
 
 var unzipCmd = &cobra.Command{
 	Use:   "unzip <zipfile>",
-	Short: "-d = Распаковать ZIP в директорию (параллельно) , -d созданием с определенным именим",
+	Short: "Распаковать ZIP в директорию (параллельно) , -d созданием с определенным именим",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		zipfile := args[0]
